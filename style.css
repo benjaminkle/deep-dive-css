@@ -1,0 +1,161 @@
+/**CSS Variable **/
+:root {
+  --text-color: #097040ee;
+  --font-size-medium: 18px;
+  --main-font: Georgia;
+}
+
+body {
+  font-family: var(--main-font);
+  background: linear-gradient(to right, rgb(88, 87, 87), white);
+}
+
+/**Fixed position for Header **/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed absolute;
+  justify-content: center;
+  border-radius: 20px;
+  border: solid 1px white;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/**Use CSS variable for color and font size - intro section **/
+.intro {
+  color: var(--text-color);
+  font-size: var(--font-size-medium);
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  padding: 10px;
+  border: solid 1px white;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+/**Arrange Flexbox section horizontally, space evenly and colors **/
+.flexbox-section {
+  text-align: center;
+  width: 100%;
+  margin: auto 0;
+  padding: 10px;
+  border: solid 1px white;
+  border-radius: 20px;
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.flex-item1 {
+  border: solid grey 2px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgb(224, 103, 103);
+  color: white;
+}
+.flex-item2 {
+  border: solid grey 2px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgb(84, 84, 207);
+  color: white;
+}
+.flex-item3 {
+  border: solid grey 2px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgb(55, 134, 55);
+  color: white;
+}
+
+/**Grid Section**/
+.grid-section {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  border: solid 1px white;
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.grid-container {
+  display: grid;
+  width: 500px;
+  height: auto;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: yellowgreen;
+  box-sizing: border-box;
+  width: 130px;
+  height: 90px;
+  border: 2px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+/**Positioning Section **/
+.positioning-section {
+  text-align: center;
+  border: solid 1px white;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.relative-container {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  height: 100px;
+}
+.absolute-box {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #f0c040;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+}
+
+/**Fixed position for Footer **/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed absolute;
+  justify-content: center;
+}
+.footer {
+  font-weight: 600;
+}
